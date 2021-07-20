@@ -1,9 +1,10 @@
 const express = require("express");
 const path = require("path");
+
 // require rollbar below
-
+const Rollbar = require("rollbar");
 // create the Rollbar class below
-
+const rollbar = new Rollbar()
 const app = express();
 app.use(express.json());
 let studentList = [];
